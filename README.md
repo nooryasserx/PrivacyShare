@@ -6,6 +6,27 @@
   <a href="#العربية">العربية</a> · macOS 13+ · Swift · MIT
 </p>
 
+## Demo
+
+<p align="center">
+  <img src="docs/demo.gif" alt="PrivacyShare demo: WhatsApp and other private apps appear blurred to Google Meet viewers" width="800">
+</p>
+
+<p align="center">
+  Real recording from the viewer's side of a Google Meet call, with PrivacyShare running on the presenter's Mac.<br>
+  🎬 <a href="docs/demo.mp4"><b>Watch the full demo video (44s, with sound)</b></a>
+</p>
+
+What the demo shows:
+
+| | |
+|---|---|
+| 🟢 **Entire screen shared** | The presenter shares their whole screen on Google Meet |
+| 💬 **WhatsApp opens** | Viewers only see a blur, while the presenter sees it normally |
+| 🌐 **Private browser tab** | Tabs matching a keyword are blurred too |
+| 🔀 **Switching apps** | The blur follows each private window as you move between apps |
+| 🎨 **Hiding styles** | Blur, pixelate, or a solid block |
+
 ---
 
 ## What it does
@@ -20,7 +41,7 @@ When you share your **entire screen** in Zoom, Google Meet, Teams or anything el
 
 <p align="center">
   <img src="docs/how-it-works.png" alt="What you see vs. what meeting viewers see">
-  <br><sub>Illustration of the idea</sub>
+  <br><sub>Illustration of the idea (see the real recording in the demo above)</sub>
 </p>
 
 ## How it works
@@ -70,7 +91,7 @@ Sources/PrivacyShare/
   WindowMirror.swift      Per-window capture + the two overlays
   Obscurer.swift          Blur / pixelate / solid filters
 Resources/                Info.plist and app icon
-docs/                     README images
+docs/                     README images and demo video
 build_app.sh              Builds and ad-hoc signs PrivacyShare.app
 ```
 
@@ -102,6 +123,14 @@ Issues and pull requests are welcome. For larger changes, please open an issue f
 ## بالعربي
 
 **PrivacyShare** تطبيق ماك مفتوح المصدر. بتشارك شاشتك كاملة بأي برنامج اجتماعات، وانت بتشوف كل شي طبيعي، والطرف التاني بيشوف التطبيقات الخاصة مغبّشة، زي واتساب وتيليغرام والإيميل.
+
+🎬 **[شوف فيديو التجربة](docs/demo.mp4)**: تسجيل حقيقي من جهة الطرف التاني بمكالمة Google Meet، وفيه:
+
+- مشاركة الشاشة كاملة.
+- فتح واتساب، والطرف التاني بيشوفه مغبّش.
+- تاب خاص بالمتصفح كمان مغبّش.
+- التنقّل بين التطبيقات، والتغبيش بيلحقها.
+- أشكال الإخفاء: تغبيش، بكسلة، وحجب كامل.
 
 **التشغيل:**
 
